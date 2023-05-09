@@ -1,0 +1,266 @@
+* {
+    text-decoration: none;
+}
+/* 案例分享独改 */
+.header {
+    min-height: 500px;
+    min-width: 100%;
+    overflow: hidden;
+    background: url('../img/caseshare/anlibanner.jpg') no-repeat;
+    background-size: 100%;
+    position: relative;
+}
+
+.header-fixed {
+    width: 100%;
+    position: fixed;
+    height: 95px;
+    background-color: rgba(102, 102, 102, 0.89);
+    top: 0;
+    left: 0;
+    z-index: 999;
+}
+
+.header-top {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-logo {
+    position: relative;
+    width: 364px;
+    height: 95px;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom-right-radius: 45px;
+    flex-shrink: 0;
+}
+
+.header-logo::before {
+    content: "";
+    position: absolute;
+    display: inline-block;
+    top: 0px;
+    left: 0px;
+    width: 0;
+    height: 0px;
+    content: '';
+    border-style: solid;
+    border-width: 10px;
+    background-color: #14916A;
+    border-color: #fff #fff transparent transparent;
+    transform: rotate(90deg)
+}
+
+.header-nav {
+    height: 95px;
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    color: #fff;
+    flex-shrink: 0;
+    padding-left: 172px;
+}
+
+.header-nav ul {
+    display: flex;
+    min-width: 664px;
+}
+
+.header-nav ul a {
+    font-size: 16px;
+    color: #fff;
+    display: block;
+    padding: 10px 22px;
+}
+
+.header-nav ul li {
+    position: relative;
+}
+
+.header-nav ul li:hover a::before {
+    content: "";
+    position: absolute;
+    display: inline-block;
+    top: 0px;
+    right: 0px;
+    width: 0;
+    height: 0;
+    border-top: 10px solid #14916A;
+    border-left: 10px solid transparent;
+}
+
+.header-nav ul li:hover a {
+    background-color: #DDDDDD;
+    color: #000;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+/*  */
+/* 每个页面要改的选择器.about-us */
+.header-nav ul li .about-us {
+    background-color: #DDDDDD;
+    color: #000;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.header-nav ul li .about-us::before {
+    content: "";
+    position: absolute;
+    display: inline-block;
+    top: 0;
+    right: 0;
+    width: 0;
+    height: 0;
+    border-top: 10px solid #14916A;
+    border-left: 10px solid transparent;
+}
+
+/* 每个页面要改的选择器.about-us */
+
+.header-app {
+    height: 95px;
+    margin-right: 36px;
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.header-app ul {
+    display: flex;
+}
+
+.header-app ul li a {
+    display: block;
+    padding: 0 12px;
+    width: 25px;
+    height: 25px;
+}
+.header-back1{
+    background: url('../img/aboutUs/header/微信.png') center center  no-repeat;
+    background-size: 24px 20px;
+}
+.header-app ul li:hover .header-back1{
+    background: url('../img/aboutUs/header/wx.png') center center  no-repeat;
+    background-size: 24px 20px;
+}
+.header-back2{
+    background: url('../img/aboutUs/header/微博.png') center center  no-repeat;
+    background-size: 24px 21px;
+}
+.header-app ul li:hover .header-back2{
+    background: url('../img/aboutUs/header/wb.png') center center  no-repeat;
+    background-size: 24px 21px;
+}
+.header-back3{
+    background: url('../img/aboutUs/header/生活－大众点评.png') center center  no-repeat;
+    background-size: 23px 23px;
+}
+.header-app ul li:hover .header-back3{
+    background: url('../img/aboutUs/header/sh.png') center center  no-repeat;
+    background-size: 23px 23px;
+}
+.header-back4{
+    background: url('../img/aboutUs/header/抖音.png') center center  no-repeat;
+    background-size: 17px 19px;
+}
+.header-app ul li:hover .header-back4{
+    background: url('../img/aboutUs/header/yy.png') center center  no-repeat;
+    background-size: 17px 19px;
+}
+.header-back5{
+    background: url('../img/aboutUs/header/齐家.png') center center  no-repeat;
+    background-size: 24px 24px;
+}
+.header-app ul li:hover .header-back5{
+    background: url('../img/aboutUs/header/jq.png') center center  no-repeat;
+    background-size: 24px 24px;
+}
+.header-back6{
+    background: url('../img/aboutUs/header/土巴兔.png') center center  no-repeat;
+    background-size: 26px 25px;
+}
+.header-app ul li:hover .header-back6{
+    background: url('../img/aboutUs/header/greentu.png') center center  no-repeat;
+    background-size: 26px 25px;
+}
+.header-app ul li {
+    position: relative;
+}
+.header-weixin {
+    width: 200px;
+    height: 200px;
+    background-color: #fff;
+    position: absolute;
+    top: 35px;
+    left: 0;
+    box-shadow: 2px -2px 2px #ccc;
+    border-radius: 6px;
+    display: none;
+}
+.header-weixin-img {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.header-weixin-img img {
+    display: block;
+}
+.header-weixin-text {
+    font-size: 14px;
+    color: #333;
+    margin: 5px 0px;
+}
+.header-weixin::before {
+    position: absolute;
+    display: inline-block;
+    top: -10px;
+    left: 15px;
+    width: 0;
+    height: 0px;
+    content: '';
+    border-style: solid;
+    border-width: 10px;
+    border-color: #fff #fff transparent transparent;
+    transform: rotate(-45deg);
+    box-shadow: 2px -2px 2px #ccc;
+}
+.weixin:hover .header-weixin {
+    display: block;
+}
+
+/* 下方的绿色盒子部分 */
+.header-t-t{
+    min-width: 1200px;
+    position: absolute;
+    left: 50%;
+    margin-left: -600px;
+    bottom: 88px;
+}
+.header-title {
+    width: 334px;
+    height: 130px;
+    background-color: rgba(20, 145, 106, 0.8);
+    border-radius: 3.125rem 0 3.125rem 0;
+}
+
+.header-title-text {
+    padding: 35px 32px 32px 32px;
+    text-align: right;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.header-title-text-english {
+    font-size: 20px;
+}
+
+.header-title-p2 {
+    font-size: 36px;
+}

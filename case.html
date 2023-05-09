@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>案例分享</title>
+    <link rel="stylesheet" href="./css/aboutUs_lj.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="css/all.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: '微软雅黑';
+            list-style: none;
+        }
+
+        .case .main {
+            width: 1240px;
+            margin: 0 auto;
+            background-color: white;
+        }
+
+        .case .main ul{
+                    margin: 26px auto;
+                    display: flex;
+                    width: 1200px;
+                    flex-wrap: wrap;
+                    justify-content: space-between;
+                }
+        .case .main li{
+            margin: 10px 0;
+            cursor: pointer;
+            position: relative;
+        }
+        .case .main ul li img{
+            display: block;
+            width: 590px;
+            height: 400px;
+        }
+        /* 透明区域 */
+        .case .main li .main-hover {
+            width: 530px;
+            height: 340px;
+            top: 50%;
+            left: 50%;
+            margin-top: -170px;
+            margin-left: -265px;
+            color: white;
+            font-size: 30px;
+            background-color: rgba(0, 0, 0, 0.7);
+            position: absolute;
+            opacity: 0;
+            transition: all 0.5s linear;
+        }
+        .case .main li .main-hover span{
+            position: absolute;
+            top: 143px;
+            left: 192px;
+            line-height: 30px;
+        }
+
+        .case .main li:hover .main-hover {
+            opacity: 1;
+        }
+        /* 右上角三角区域 */
+        .case .main li::after {
+            content: "";
+            position: absolute;
+            display: inline-block;
+            top: 0;
+            right: 0;
+            width: 0;
+            height: 0;
+            opacity: 0.5;
+            border-top: 28px solid #14916A;
+            border-left: 28px solid transparent;
+            transition: all 0.5s linear;
+        }
+
+        .case .main li:hover::after {
+            opacity: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="case">
+        <!-- 头部 -->
+        <div class="header">
+            <div class="header-fixed">
+                <div class="header-top">
+                    <div class="header-logo">
+                        <a href="index.html">
+                            <img src="./img/aboutUs/header/logo.png" alt="">
+                        </a>
+                    </div>
+                    <div class="header-nav">
+                        <ul>
+                            <li><a href="aboutUs.html" target="_parent" class="">了解我们</a></li>
+                            <li><a href="case.html" target="_parent" class="about-us">案例分享</a></li>
+                            <li><a href="" target="_parent" style="pointer-events:none" class="">精装服务</a></li>
+                            <li><a href="" target="_parent" style="pointer-events:none" class="">优质产品</a></li>
+                            <li><a href="xwdt.html" target="_parent" class="">公司动态</a></li>
+                            <li><a href="lxwm.html" target="_parent" class="">找我们聊聊</a></li>
+                        </ul>
+                    </div>
+                    <div class="header-app">
+                        <ul>
+                            <li class="weixin">
+                                <a href="" class="header-back1"></a>
+                                <div class="header-weixin">
+                                   <div class="header-weixin-img">
+                                    <img src="./img/aboutUs/header/下载.png" alt="">
+                                    <p class="header-weixin-text">扫一扫微信</p>
+                                </div>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="" class="header-back2"></a>
+                            </li>
+                            <li>
+                                <a href="" class="header-back3"></a>
+                            </li>
+                            <li>
+                                <a href="" class="header-back4"></a>
+                            </li>
+                            <li>
+                                <a href="" class="header-back5"></a>
+                            </li>
+                            <li>
+                                <a href="" class="header-back6"></a>
+                            </li>
+                        </ul>
+                    </div>
+    
+                </div>
+            </div>
+            <div class="header-t-t">
+                <div class="header-title">
+                    <div class="header-title-text">
+                        <p class="header-title-text-english">CASE</p>
+                        <p class="header-title-p2">案例分享</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 主体 -->
+        <div class="main">
+            <style>
+                
+            </style>
+            <ul>
+                <li><div class="main-hover"><span>论 · 美的存在</span></div><img src="./img/caseshare/anlimain01.jpg" alt=""></li>
+                <li><div class="main-hover"><span>论 · 美的存在</span></div><img src="./img/caseshare/anlimain02.jpg" alt=""></li>
+                <li><div class="main-hover"><span>论 · 美的存在</span></div><img src="./img/caseshare/anlimain03.jpg" alt=""></li>
+                <li><div class="main-hover"><span>论 · 美的存在</span></div><img src="./img/caseshare/anlimain04.jpg" alt=""></li>
+                <li><div class="main-hover"><span>论 · 美的存在</span></div><img src="./img/caseshare/anlimain05.jpg" alt=""></li>
+                <li><div class="main-hover"><span>论 · 美的存在</span></div><img src="./img/caseshare/anlimain06.jpg" alt=""></li>
+                <li><div class="main-hover"><span>论 · 美的存在</span></div><img src="./img/caseshare/anlimain07.jpg" alt=""></li>
+                <li><div class="main-hover"><span>论 · 美的存在</span></div><img src="./img/caseshare/anlimain08.jpg" alt=""></li>
+            </ul>
+        </div>
+        <!-- 尾部 -->
+        
+<footer class="fot_box">
+    <div class="fot_tup">
+        <div class="ft_box">
+            <div class="ft_log">
+                <a href="./index.html">
+                    <img src="./img/log.png" alt="">
+                </a>
+            </div>
+            <div class="ft_phone">
+                <div class="ft_dh">
+                    <img src="./img/dianh.png" alt="">
+                    <span>028-82708866 / 13558833169</span>
+                </div>
+            </div>
+            <div class="ft_lxfs">
+                <div class="ft_l">
+                    <span class="ft_l_t">联系方式</span>
+                    <ul>
+                        <li>
+                            <div><img src="./img/home.png" alt=""></div>
+                            <span>成都熊管家装饰装修有限公司</span>
+                        </li>
+                        <li>
+                            <div><img src="./img/address.png" alt=""></div>
+                            <span>地址：成都温江区珠江广场写字楼15楼</span>
+                        </li>
+                        <li>
+                            <div><img src="./img/phone.png" alt=""></div>
+                            <span>联系电话：028-82708866（座机）/13558833169</span>
+                        </li>
+                        <li>
+                            <div><img src="./img/email.png" alt=""></div>
+                            <span>E-mail：admian@admin.com</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="ft_c">
+                    <span class="ft_l_t">快速导航</span>
+                    <ul>
+                        <li><a href="./aboutUs.html">了解我们</a>/</li>
+                        <li><a href="./case.html">案列分享</a>/</li>
+                        <li><a href="">精装服务</a>/</li>
+                        <li><a href="">优质产品</a>/</li>
+                        <li><a href="./xwdt.html">公司动态</a>/</li>
+                        <li><a href="./lxwm.html">联系我们</a></li>
+                    </ul>
+                    <div>
+                        <img src="./img/footer/txt.png" alt="">
+                    </div>
+                </div>
+                <div class="ft_r">
+                    <span class="ft_l_t">快捷入口</span>
+                    <table>
+                        <tr>
+                            <td class="ftr_one">
+                                <img src="./img/footer/weixin.png" alt="" class="wx">
+                                <div class="ewm">
+                                    <div class="ewm_img">
+                                        <img src="./img/ewm.jpg" alt="">
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="ftr_two"><img src="./img/footer/weibo.png" alt=""></td>
+                            <td class="ftr_three"><img src="./img/footer/people.png" alt=""></td>
+                            <td class="ftr_four"><img src="./img/footer/music.png" alt=""></td>
+                            <td class="ftr_five"><img src="./img/footer/qijia.png" alt=""></td>
+                            <td class="ftr_six"><img src="./img/footer/tutu.png" alt=""></td>
+                        </tr>
+                        <tr>
+                            <td><a href="aboutUs.html">互联网家装引领者</a></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div class="fot_tub">
+        <span>Copyright</span><span>&copy;2015-2019</span><span>成都熊管家装饰装修有限公司 版权所有</span>
+    </div>
+</footer>
+</body>
+<script src="js/all.js"></script>
+
+</html>
